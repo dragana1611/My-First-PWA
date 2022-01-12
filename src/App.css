@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
+body {
+  background-color: #e4eaf5d7;
+  color: #243b55;
+}
 .App {
   text-align: center;
 }
@@ -7,25 +12,31 @@
   pointer-events: none;
 }
 
+.App-link {
+  color: #61dafb;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-image: linear-gradient(to right, #141e30, #2d4969);
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff5b8;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-family: Tinos;
+  font-size: calc(10px + 2vmin);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +46,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.h-divider {
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  width: 80%;
+  position: relative;
+}
+
+.h-divider .shadow {
+  overflow: hidden;
+  height: 20px;
+}
+
+.h-divider .shadow:after {
+  content: "";
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px #243b55;
+}
+
+.h-divider .text {
+  width: 100px;
+  height: 45px;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -33px;
+  left: 50%;
+  margin-left: -60px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: white;
+}
+
+.h-divider .text i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+  text-align: center;
+  line-height: 50px;
+  font-style: normal;
+  color: #999;
 }
